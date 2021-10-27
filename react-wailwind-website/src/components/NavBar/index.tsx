@@ -9,6 +9,7 @@ import { slide as Menu } from "react-burger-menu";
 import styles from "./menuStyles";
 
 const Container = styled.div`
+  width: 90%;
   ${tw`
         flex
         h-20
@@ -21,13 +22,14 @@ const Container = styled.div`
         items-center
         self-center
 
-    `}
+    `};
 `;
 
 const NavItems = tw.ul`
     list-none
     w-full
     h-auto
+    lg:w-auto
     lg:h-full
     flex
     lg:ml-20
@@ -48,7 +50,7 @@ const NavItem = tw.li`
     lg:text-base
     transition-colors
     transition-duration[300ms]
-    hover:text-gray-300
+    hover:text-gray-200
     box-content
     mb-2
     lg:mb-0
